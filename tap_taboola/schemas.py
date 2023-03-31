@@ -5,7 +5,7 @@ campaign = {
             'type': 'integer',
             'description': 'The ID of this campaign',
         },
-        'advertiser_id': {
+        'advertising_id': {
             'type': 'string',
             'description': 'i.e. taboola-demo-advertiser',
         },
