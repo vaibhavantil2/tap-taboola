@@ -247,6 +247,11 @@ def do_sync(args):
     singer.write_schema('campaign_performance',
                         schemas.campaign_performance,
                         key_properties=['campaign_id', 'date'])
+    
+        singer.write_schema('advertising_id',
+                        schemas.campaign,
+                        key_properties=['advertising_id'])
+
 
     verify_account_access(access_token, config.get('account_id'))
 
